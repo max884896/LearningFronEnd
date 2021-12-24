@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML中的图片/音频/视频的标签</title>
+</head>
+<body>
+    <h2>HTML中的图像标签：img</h2>
+    <img src="./AV/j.jpg", alt="图像未能正确加载" title="高清壁纸" 
+        width="200" height="200">
+        <hr>
+    <!--
+        1. src 属性是必须的，它包含了你想嵌入的图片的文件路径。
+        2. alt 属性包含一条对图像的文本描述，这不是强制性的，但对可访问性而言，
+            它难以置信地有用——屏幕阅读器会将这些描述读给需要使用阅读器的使用者听，让他们知道图像的含义。
+            如果由于某种原因无法加载图像，普通浏览器也会在页面上显示alt 属性中的备用文本：例如，网络错误、内容被屏蔽或链接过期时。
+        3.title:鼠标放置在图片上显示的文字
+        4. 关于加载图片的路径：
+        1. 互联网路径
+        2. 绝对路径：强烈不推荐使用
+        3. 相对路径：推荐的，相对于HTNL文件的路径
+            当前文件夹： ./ （可以省略）
+            当前文件夹的父文件夹： ../
+    -->
+
+    <h3>在HTML5之前的标签:object</h3><br>
+    <object height="200" width="200" data="./AV/j.jpg"></object>
+    <br>
+    <object height="150" width="400" data="./AV/m.mp3"></object>
+    <br>
+    <object height="400" width="600" data="./AV/p.mp4"></object>
+    <hr>
+
+    <h3>HTML5中特有的，插入音频/视频的标签：embed</h3>
+    <embed height="200" width="200" src="./AV/j.jpg">
+    <embed height="150" width="400" src="./AV/m.mp3">
+    <embed height="400" width="600" src="./AV/p.mp4">
+
+    <h3>在HTML5中推荐使用的音频标签:audio</h3>
+    <audio controls="controls">
+        <source src="./AV/m.mp3" type="audio/mp3">
+    </audio>
+    <hr>
+
+    <h3>在HTML5中推荐是使用的视频标签：video</h3>
+    <video height="400" width="600" controls="controls">
+        <source src="./AV/p.mp4" type="video/mp4">
+    </video>
+
+    <h3>?????</h3>
+    <embed src="./HTML中的标签整理01.html" height="500 " width="500">
+    <object data="./HTML中的标签整理02.html" height="500" width="500"></object>
+    <br>
+    <object data="./HTML中的标签整理03.html" height="1100" width="1100"></object>
+
+</body>
+</html>
