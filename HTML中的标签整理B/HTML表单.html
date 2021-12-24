@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML中的表单</title>
+</head>
+
+<body>
+    <h3>------表单------</h3>
+    <form method="post" action="">
+        <label>用户名：</label>
+        <input type="text" name="username" size="10">
+        <br>
+        <label>密码：</label>
+        <input type="password" name="password" size="6">
+        <br>
+        <label>性别：</label>
+        <input type="radio" name="gender" value="1" checked>男
+        <input type="radio" name="gender" value="2">女
+        <input type="radio" name="gender" value="3">中性
+        <br>
+        <label>爱好</label>
+        <input type="checkbox" name="hobby" value="">看书
+        <input type="checkbox" name="hobby" value="">看人
+        <input type="checkbox" name="hobby" value="">看房
+        <input type="checkbox" name="hobby" value="">看海
+        <br>
+        <label>个人介绍:</label>
+        <textarea name="说说你自己" rows="10" cols="30">
+        </textarea>
+        <br>
+        <label>地区:</label>
+        <select>
+            <option>北京</option>
+            <option>上海</option>
+            <option>南京</option>
+            <option selected>云南</option>
+        </select>
+        <br>
+        <input type="submit" value="提交">
+    </form>
+</body>
+
+</html>
